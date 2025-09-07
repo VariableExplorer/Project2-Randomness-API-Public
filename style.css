@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #2c3e50;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    position:absolute;
+    width: 50%;
+    height: 80vh;
+    background: black;
+    border-radius: 10px;
+    border: 3px solid #34495e;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: all 0.1s ease-out;
+    z-index: 10;
+}
+
+.loot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: greenyellow;
+    z-index: 10;
+}
+
+.enemy {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: red;
+    border-radius: 50%;
+    border: 3px solid red;
+    transition: all 0.1s ease-out;
+    z-index: 10;
+}
+
+.player::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+.key {
+    display: inline-block;
+    background: #34495e;
+    color: #ecf0f1;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #2c3e50;
+    font-weight: bold;
+}
+
+.coordinates {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(52, 73, 94, 0.8);
+    color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    display: none; /* Hidden by default */
+}
+
+.door{
+    position: absolute;
+    background-color: rgb(38, 27, 5);
+    border: 2px solid #000000; /* Optional: adds a border to make it more visible */
+}
+
+#room {
+    background-color: rgb(65, 65, 65);
+    position: relative;
+    border: 2px solid #909090; /* Optional: adds a border to make it more visible */
+    display: none; /* Hidden by default */
+}
+
+#GAME_OVER, #ERROR {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: red;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 100; /* Ensure it appears above other elements */
+}
+
+#START_GAME {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: green;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 100; /* Ensure it appears above other elements */
+}
+
+div  p {
+    color: white;
+}
+
+.restart-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+

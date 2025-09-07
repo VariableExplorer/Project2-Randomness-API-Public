@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Movement Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<html>
+    <body>
+        <div class="game-container" id="gameContainer">
+            <div id="room" style="background-color: gray;">
+                <div class="player" id="player"></div>
+            </div>
+            <div class="coordinates" id="coordinates">X: 0, Y: 0</div>
+            <div id="START_GAME">
+                <h1>The Shifting Ruins</h1>
+                <p>Welcome to the shifting dungeons, adventurer!
+                   Are you ready to face the perils that await
+                   in hopes of finding glory? Well, then, move
+                   around the dungeons with the W, A, S, and D keys.
+                   Walk over the green squares to find the loot!
+                   Walk over the brown doors to enter new rooms.
+                   But beware of the red circles, they are the
+                   guardians of the dungeon and will put an end
+                   to your adventure if they catch you!
+                   Good luck, adventurer!
+                </p>
+                <button class="start-button">Start Game</button>
+            </div>
+            <div id="GAME_OVER">
+                <h1>GAME OVER</h1>
+                <p>You were caught by the enemy!</p>
+                <button class="restart-button">Restart</button>
+            </div>
+            <div id="ERROR">
+                <h1>ERROR</h1>
+                <p>An error has occurred.</p>
+                <button class="restart-button">Restart</button>
+            </div>
+        </div>
+        
+        <!--
+        <div class="controls">
+            <h3>Player Movement Controls</h3>
+            <span class="key">W</span> Move Up
+            <span class="key">A</span> Move Left
+            <span class="key">S</span> Move Down
+            <span class="key">D</span> Move Right
+            <br><br>
+            <span class="key">SHIFT</span> Hold for faster movement
+        </div>
+        -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
