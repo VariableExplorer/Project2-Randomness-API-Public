@@ -296,7 +296,7 @@ function startGame() {
     roomArea.style.display = "block";
     coordinates.style.display = "block";
     success = true;
-    fetch("https://api.jsonbin.io/v3/qs/68bde635d0ea881f407540a7").
+    fetch("https://api.jsonbin.io/v3/qs/68bf5dceae596e708fe75855").
     then(function(response){
         console.log(response);
         response.json().then(function(data) {
